@@ -4,6 +4,8 @@ export function App() {
   const [count, setCount] = useState(0);
   const [hide, setHide] = useState(false);
 
+  if (hide) return null;
+
   return (
     <>
       {hide && <p>Texto 1</p>}
